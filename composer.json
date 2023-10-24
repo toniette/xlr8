@@ -1,0 +1,17 @@
+{
+  "name": "toniette/xlr8",
+  "description": "a simple package to demonstrate my skills",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "toniette",
+      "email": "luis_ti@outlook.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Xlr8\\": "src/"
+    }
+  }
+}
