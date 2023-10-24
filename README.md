@@ -14,6 +14,13 @@ Search::setSources([
 
 $orderedHotels = Search::getNearbyHotels(-23.6814347,-46.9249416, Sortable::PRICE_PER_NIGHT);
 
-var_dump($orderedHotels);
+foreach ($orderedHotels as $hotel) {
+    echo sprintf(
+        '%s, %s KM, %s EUR',
+        $hotel['name'],
+        round($hotel['proximity'], 2),
+        $hotel['price_per_night']
+    ) . PHP_EOL;
+}
 
 ```
